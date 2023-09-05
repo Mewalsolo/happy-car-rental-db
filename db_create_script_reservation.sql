@@ -1,0 +1,16 @@
+create table Reservation(
+reservation_id int primary key,
+customer_id int,
+car_id int,
+pickup_office_id int,
+return_office_id int ,
+pickup_date date,
+return_date date,
+reservation_status VARCHAR(20),
+total_price DECIMAL(10,2),
+insurance_id int ,
+foreign key (customer_id) references Customer(customer_id),
+foreign key (car_id) references Car(car_id),
+foreign key (pickup_office_id) references Office(office_id),
+foreign key (return_office_id) references Office(office_id),
+foreign key (insurance_id) references Insurance(insurance_id));
