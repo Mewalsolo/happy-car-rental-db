@@ -1,5 +1,5 @@
 create table Employee_Office_Relation(
-relation_id int,
+relation_id int primary key,
 employee_id int ,
 office_id int,
 foreign key(employee_id)references Employee (employee_id),
