@@ -1,0 +1,1 @@
+create database Happy_Car_Rental_DB
