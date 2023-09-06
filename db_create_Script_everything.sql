@@ -113,3 +113,12 @@ payment_date date,
 payment_status VARCHAR(20),
 payment_method varchar(50), 
 foreign key (reservation_id) references Reservation(reservation_id))
+
+
+alter table customer 
+modify address_id VARCHAR(100)
+
+alter table customer change address_id address VARCHAR(100)
+
+
+
