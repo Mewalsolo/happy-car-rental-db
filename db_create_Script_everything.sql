@@ -147,12 +147,6 @@ values (1, "Toyota", "Corolla", 2020, 2, 50.00, true),
 (5, "Mercedes", "E-Class", 2022, 5, 200.00, true)
 
 
-insert into office_contact  
-values(1,1, "Jhon Doe", "john.doe@email.com","777-888-7890"),
-(2,2, "Jane Smith", "jane.smith@email.com","987-654-3210"),
-(3,3, "David Johnson", "david.johnson@email.com","555-123-4567"),
-(4,4, "Sarah Williams", "sarah.williams@email.com","111-222-3333"),
-(5,5, "Michael Anderson", "michael.anderson@email.com","777-888-9999")
 
 
 insert into address 
@@ -194,5 +188,37 @@ insert into payment
 values( 1 ,1 ,150.00, "2023-09-15", "Confirmed" ,"Cash" ),
 ( 2 , 2,600.00 , "2023-09-16", "Confirmed" ,"Credit Card" ),
 ( 3  ,3,150.00 , "2023-09-20" , "Pending" , "Debit Card")
+
+insert into employee 
+values ( 1,"John" ,"Doe","john.doe@email.com", "123-456-7890",1),
+( 2,"Jane","Smith","jane.smith@email.com","987-654-3210",1),
+( 3,"David","Johnson", "david.johnson@email.com" ,"555-123-4567", 2),
+( 4 ,"Sarah","Williams","sarah.williams@email.com", "111-222-3333" , 2),
+( 5 ,"Michael","Anderson","michael.anderson@email.com" ,"777-888-9999" ,3)
+
+
+
+insert into manager_office_relation 
+values (1, 1, 1 ), 
+(2,2,1),
+(3,3,2),
+(4,4,2),
+(5,5,3)
+
+
+
+insert into  employee_office_relation 
+values (1,1,1),
+(2,2,1),
+(3,3,2),
+(4,4,2),
+(5,5,3)
+
+insert into reservation_processing 
+values (1,1,1,1,"2023-09-15"),
+(2,2,3,2,"2023-09-16"),
+(3,3,5,3,"2023-09-20")
+
+
 
 
