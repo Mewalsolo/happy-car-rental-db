@@ -220,5 +220,15 @@ values (1,1,1,1,"2023-09-15"),
 (3,3,5,3,"2023-09-20")
 
 
-
+UPDATE Customer
+SET phone = CASE
+    WHEN customer_id = 1 THEN '123-456-7890'
+    WHEN customer_id = 2 THEN '987-654-3210'
+    WHEN customer_id = 3 THEN '555-123-4597'
+    WHEN customer_id = 4 THEN '111-222-3333'
+    WHEN customer_id = 5 THEN '777-888-9999'
+    WHEN customer_id = 6 THEN '444-777-2222'
+    WHEN customer_id = 7 THEN '333-999-1111'
+        ELSE phone
+END;
 
