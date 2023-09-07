@@ -120,5 +120,68 @@ modify address_id VARCHAR(100)
 
 alter table customer change address_id address VARCHAR(100)
 
+insert into customer 
+values(1,"John","Doe","john.doe@gmail.com",123-456-7890,"1985-07-15","123 Main St, City , Country")
+values (2,"jane","Johnson","jane.johnson@gmail.com",987-654-3210, "1990-03-22","456 Elm St , Town, Country")
+
+insert into customer 
+ values (3,"Michael","Smith","michael.smith@email.com",555-123-4597,"1982-12-05","789 Oak Ave, Village, Country"),
+  (4,"Emily","Davis","emily.davis@email.com",111-222-3333,"1995-09-10","101 Pine Rd, Suburb, Country"),
+ (5,"David","Wilson","david.wilson@email.com",777-888-9999, "1988-01-30" ,"222 Maple Ln, City ,Country"),
+  (6,"Sarah","Miller","sarah.miler@email.com",444-777-2222, "1992-06-18","333 Birch St, Town, Country"),
+  (7,"James","Lee","james.lee@email.com",333-999-1111, "1979-11-25","444 Cedar Rd, Village, Country")
+
+  
+  insert into car_type 
+  values (1, "Compact"),
+(2,"Sedan"),
+(3,"SUV"),
+(4,"Sport"),
+(5,"Luxury")
+
+insert into car 
+values (1, "Toyota", "Corolla", 2020, 2, 50.00, true),
+(2, "Honda", "Civic", 2021, 2, 50.00, true),
+(3, "Ford", "Fusion", 2020, 2, 60.00, true),
+(4, "bMW", "328i", 2021, 4, 150.00, true),
+(5, "Mercedes", "E-Class", 2022, 5, 200.00, true)
+
+
+
+insert into office_contact  
+values(1,1, "Jhon Doe", "john.doe@email.com","777-888-7890"),
+(2,2, "Jane Smith", "jane.smith@email.com","987-654-3210"),
+(3,3, "David Johnson", "david.johnson@email.com","555-123-4567"),
+(4,4, "Sarah Williams", "sarah.williams@email.com","111-222-3333"),
+(5,5, "Michael Anderson", "michael.anderson@email.com","777-888-9999")
+
+
+insert into address 
+values (1, "Main St","city","Maryland","9038","USA"),
+(2,"Elm St","Downtown","Virginia","3059","USA"),
+(3,"Oak Ave","Suburb","New York","4059","USA")
+
+
+
+alter table office 
+drop column office_location
+
+
++------------+----------------------+------------------------+
+| office_id  | office_name          | office_location        |
++------------+----------------------+------------------------+
+|     1      | Main Office           | 123 Main St, City      |
+|     2      | Downtown Branch       | 456 Elm St, Downtown   |
+|     3      | Suburban Branch       | 789 Oak Ave, Suburb    |
++------------+----------------------+------------------------+
+
+
+insert into office 
+values(1,"Main Office", 1),
+(2,"Downtown Branch", 2),
+(3,"Suburban Branch", 3)
+
+
+
 
 
