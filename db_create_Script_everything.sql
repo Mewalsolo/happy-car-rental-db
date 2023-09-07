@@ -147,7 +147,6 @@ values (1, "Toyota", "Corolla", 2020, 2, 50.00, true),
 (5, "Mercedes", "E-Class", 2022, 5, 200.00, true)
 
 
-
 insert into office_contact  
 values(1,1, "Jhon Doe", "john.doe@email.com","777-888-7890"),
 (2,2, "Jane Smith", "jane.smith@email.com","987-654-3210"),
@@ -162,18 +161,8 @@ values (1, "Main St","city","Maryland","9038","USA"),
 (3,"Oak Ave","Suburb","New York","4059","USA")
 
 
-
 alter table office 
 drop column office_location
-
-
-+------------+----------------------+------------------------+
-| office_id  | office_name          | office_location        |
-+------------+----------------------+------------------------+
-|     1      | Main Office           | 123 Main St, City      |
-|     2      | Downtown Branch       | 456 Elm St, Downtown   |
-|     3      | Suburban Branch       | 789 Oak Ave, Suburb    |
-+------------+----------------------+------------------------+
 
 
 insert into office 
@@ -181,7 +170,29 @@ values(1,"Main Office", 1),
 (2,"Downtown Branch", 2),
 (3,"Suburban Branch", 3)
 
+insert into office_contact 
+values ( 1,1,"John Doe","john.doe@email.com", "123-456-7890"),
+( 2,1,"Jane Smith","jane.smith@email.com","987-654-3210"),
+( 3,2,"David Johnson", "david.johnson@email.com" ,"555-123-4567" ),
+( 4 ,2,"Sarah Williams","sarah.williams@email.com", "111-222-3333"),
+( 5 ,3 ,"Michael Anderson","michael.anderson@email.com" ,"777-888-9999" )
 
 
+insert into insurance 
+values (1,"Basic", "Basic coverage with no extras"),
+( 2,"Standard","Standard coverage"),
+( 3,"Premium","Premium coverage with extras")
+
+
+insert into reservation 
+values ( 1,1,2,1,2,"2023-09-15", "2023-09-18","Confirmed",150.00,1 ),
+( 2,2,4 ,2,1 ,"2023-09-16","2023-09-20","Confirmed",600.00 ,2 ),
+( 3,3,1, 1,3,"2023-09-20","2023-09-23","Pending",150.00, NULL )
+
+
+insert into payment 
+values( 1 ,1 ,150.00, "2023-09-15", "Confirmed" ,"Cash" ),
+( 2 , 2,600.00 , "2023-09-16", "Confirmed" ,"Credit Card" ),
+( 3  ,3,150.00 , "2023-09-20" , "Pending" , "Debit Card")
 
 
